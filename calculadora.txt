@@ -1,0 +1,26 @@
+def suma(a, b):
+    return a + b
+
+
+def resta(a, b):
+    return a - b
+
+print("Ingrese el primer número:")
+num1 = float(input())
+
+print("Ingrese el segundo número:")
+num2 = float(input())
+
+print("Seleccione la operación:")
+print("1. Suma")
+print("2. Resta")
+opcion = int(input())
+
+if opcion == 1:
+    resultado = suma(num1, num2)
+    print("La suma es:", resultado)
+elif opcion == 2:
+    resultado = resta(num1, num2)
+    print("La resta es:", resultado)
+else:
+    print("Opción inválida")
